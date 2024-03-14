@@ -1,0 +1,50 @@
+.footer {
+    margin: 0%;
+    background-color: $footer-background;
+    font-family: roboto;
+    padding: 40px 20px 20px 30px;
+
+    a {
+        color: #ffff;
+
+    }
+}
+
+.footer-col {
+    padding: 10px 10px;
+}
+
+.footer-icon {
+    margin-right: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+
+}
+
+.fa-handshake-simple {
+    color: #ededed;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.footer-logo {
+    font-family: Shrikhand;
+    color: #ededed;
+    margin: 0%;
+}
+
+@media screen and (min-width:768px) {
+    .footer-links {
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .footer-logo {
+        justify-items: end;
+    }
+}

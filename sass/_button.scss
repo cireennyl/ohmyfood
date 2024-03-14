@@ -1,0 +1,81 @@
+.section__button {
+    border-radius: 30px;
+    background: rgb(147, 76, 183);
+    background: linear-gradient(169deg, rgba(220, 110, 219, 1) 27%, rgba(165, 92, 220, 1) 100%);
+    box-shadow: 0 3px 15px 0 rgb(139, 40, 188);
+    min-width: 155px;
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    transition: 0.8s;
+    overflow: hidden;
+    transition: 300ms;
+    color: #ededed;
+
+
+    &:hover {
+        filter: brightness(110%);
+    }
+}
+
+.button-order {
+    border: none transparent;
+    position: relative;
+
+}
+
+.card-new {
+    background-color: #99e2d0;
+    color: #008766;
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.1;
+    width: 80px;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    padding-top: 7px;
+}
+
+
+.like {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 20px;
+    width: 20px;
+
+    &-empty,
+    &-full {
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        transition: opacity 300ms;
+    }
+
+    &-empty {
+        opacity: 1;
+    }
+
+    &-full {
+        opacity: 0;
+        background: rgb(89, 38, 151);
+        background: linear-gradient(140deg, rgba(89, 38, 151, 1) 4%, rgba(131, 59, 168, 1) 28%);
+        color: transparent;
+        background-clip: text;
+    }
+
+    &:hover {
+        .like-empty {
+            opacity: 0;
+        }
+
+        .like-full {
+            opacity: 1;
+        }
+    }
+}

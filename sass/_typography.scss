@@ -1,0 +1,63 @@
+body {
+    font-family: Roboto;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-section-title .section-title {
+    color: #000;
+    width: 268.72px;
+    height: 28px;
+}
+
+.card-title {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.card-subtitle {
+    font-weight: var(regular);
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.card-newbox {
+    color: #008766;
+
+}
+
+.title {
+    font-family: Shrikhand;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+
+}
+
+.footlink .a {
+    color: #ededed;
+}
+
+.button-order {
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: transparent;
+    justify-content: center;
+}

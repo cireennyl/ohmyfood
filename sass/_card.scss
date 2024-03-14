@@ -1,0 +1,103 @@
+.card-section {
+    flex-flow: column nowrap;
+    max-width: 1440px;
+    height: 608px;
+    margin-top: 80px;
+    background-color: $bg-grey;
+    padding: 10px 180px 10px 180px;
+    gap: 20px;
+}
+
+.card-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.card-group .card {
+    min-width: 100%;
+    flex: 1 0 0;
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0.3);
+}
+
+.card-image {
+    object-fit: cover;
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+    height: 130px;
+    width: 100%;
+}
+
+.card-section-newbox {
+    position: relative;
+    height: 30px;
+    width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 8rem;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+.card-newbox {
+    position: absolute;
+    background-color: #99e2d0;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    right: 15px;
+    top: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-link {
+    color: #353535;
+}
+
+.card-subtitle {
+    margin: 0;
+}
+
+.cards-icon {
+    display: inline;
+    height: 30px;
+    width: 70px;
+}
+
+.fa-heart ::before :hover {
+    height: 60px;
+    min-width: 100px;
+    color: $icon;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding: 15px;
+    border: 2px solid var($bg-grey);
+}
+
+.heart-icon:hover {
+    color: $gradient-bgcolor;
+    transition: ease-in 300ms;
+}
+
+@media screen and (min-width:400px) {
+    .card-group .card {
+        min-width: 300px;
+        flex: 1 0 0;
+    }
+}

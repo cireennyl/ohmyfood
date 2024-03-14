@@ -1,0 +1,79 @@
+.menu-item__card {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0.3);
+    border-radius: 10px;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.menu-item__input {
+    display: none;
+}
+
+.menu-item__body {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.menu-item__title,
+.menu-item__text {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu-item__text {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.menu-item__price {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.menu-item-checked {
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 300ms;
+    background-color: $tertiaryColor;
+}
+
+.menu-item__input:checked+label .menu-item-checked,
+.menu-item__card:hover .menu-item-checked {
+    width: 80px;
+
+
+}
+
+.padding-bottom {
+    padding-bottom: 30px;
+}
+
+.menu-animation {
+    animation-name: slidesInMenu-item-checked;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+
+}
+
+.fa-regular .fa-circle-check {
+    padding-right: auto;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

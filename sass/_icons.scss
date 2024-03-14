@@ -1,0 +1,79 @@
+.fa-map-marker-alt {
+    color: rgb(70, 69, 69);
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-store {
+    color: #9356DC;
+}
+
+
+.fa-mobile-screen-button {
+    color: $icon;
+}
+
+.m-auto-left {
+    display: block;
+}
+
+.fa-regular .fa-circle-check {
+    border: 2px solid var($bg-grey);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.fa-light .fa-heart {
+    color: #4b4b4b;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.fa-solid .fa-heart :hover:before {
+    content: '';
+    display: inline-flex;
+    position: absolute;
+    padding-top: 0px;
+    height: 10px;
+    left: 25px;
+    right: 25px;
+    justify-content: right;
+    border: 2px solid;
+    background-color: $solid-heart;
+    transition: 3s;
+}
+
+.fa-utensils {
+    color: #ededed;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.fa-arrow-left {
+    color: #4b4b4b;
+}
+
+.like {
+    height: 50px;
+    width: 30px;
+    position: relative;
+
+
+    &_fa-regular fa-heart like-empty {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        border: none transparent;
+        margin-right: 10px;
+    }
+}
+
+.like .m-auto-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

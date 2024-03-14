@@ -1,0 +1,24 @@
+.bg-grey {
+    background-color: $bg-grey;
+}
+
+p {
+    color: #353535;
+}
+
+ol li {
+
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 936px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mt {
+    margin-top: -60px;
+    position: relative;
+}
